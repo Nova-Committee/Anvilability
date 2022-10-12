@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.7.11",
+  "package": "committee.nova.anvilability.mixin",
+  "refmap": "mixins.anvilability.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinContainerRepair",
+    "MixinForgeHooks",
+    "MixinItemStack"
+  ],
+  "client": [
+    "MixinGuiRepair"
+  ]
+}

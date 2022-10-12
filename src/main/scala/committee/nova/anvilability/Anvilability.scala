@@ -1,15 +1,15 @@
-package committee.nova.examplemod
+package committee.nova.anvilability
 
-import committee.nova.examplemod.proxies.CommonProxy
+import committee.nova.anvilability.proxies.CommonProxy
 import cpw.mods.fml.common.Mod.EventHandler
 import cpw.mods.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 import cpw.mods.fml.common.{Mod, SidedProxy}
 import org.apache.logging.log4j.LogManager
 
-@Mod(modid = ExampleMod.MODID, useMetadata = true, modLanguage = "scala")
-object ExampleMod {
+@Mod(modid = Anvilability.MODID, useMetadata = true, modLanguage = "scala")
+object Anvilability {
   final val LOGGER = LogManager.getLogger
-  final val MODID = "examplemod"
+  final val MODID = "anvilability"
   final val packagePrefix = "committee.nova." + MODID + ".proxies."
 
   @SidedProxy(serverSide = packagePrefix + "CommonProxy", clientSide = packagePrefix + "ClientProxy")
